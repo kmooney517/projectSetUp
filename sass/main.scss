@@ -1,0 +1,43 @@
+@import 'bootstrap';
+
+
+table {
+  ul{
+    list-style: none;
+    padding-left: 0;
+    margin-left: 0;
+  }
+  td.topic{
+    font-weight: bold;
+    padding-top: 5em;
+  }
+}
+
+.green{
+  background: lighten(green, 20%);
+}
+
+.patientList {
+  h2{
+    text-align: center;
+  }
+  ul{
+    list-style: none;
+  }
+  li{
+    cursor: pointer;
+  }
+}
+
+.patientForm{
+  h3{
+    text-align: center;
+    margin-bottom: 1em;
+  }
+  li.true{
+    background: lighten(green, 20%);
+  }
+  li.false{
+    background: lighten(red, 20%);
+  }
+}

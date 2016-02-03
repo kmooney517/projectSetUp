@@ -1,0 +1,61 @@
+
+<div class="container">
+
+  <form ng-submit="vm.submit(patient)">
+    <input required type="text" class="form-control" placeholder="Patient Name" ng-model="patient.name">
+  
+
+    <hr>
+
+    <table class="table table-striped table-bordered">
+      <thead>
+        <tr>
+          <th></th>
+          <th>Topic</th>
+          <th>Questions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td class="topic">Topic 1</td>
+          <td>
+            <ul>
+              <li ng-class="{green: patient.t1q1}">Question 1 <input type="checkbox" ng-model="patient.t1q1"> <hr></li>
+              <li ng-class="{green: patient.t1q2}">Question 2 <input type="checkbox" ng-model="patient.t1q2"> <hr></li>
+              <li ng-class="{green: patient.t1q3}">Question 3 <input type="checkbox" ng-model="patient.t1q3"> <hr></li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td class="topic">Topic 2</td>
+          <td>
+            <ul>
+              <li ng-class="{green: patient.t2q1}">Question 1 <input type="checkbox" ng-model="patient.t2q1"> <hr></li>
+              <li ng-class="{green: patient.t2q2}">Question 2 <input type="checkbox" ng-model="patient.t2q2"> <hr></li>
+              <li ng-class="{green: patient.t2q3}">Question 3 <input type="checkbox" ng-model="patient.t2q3"> <hr></li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td class="topic">Topic 3</td>
+          <td>
+            <ul>
+              <li ng-class="{green: patient.t3q1}">Question 1 <input type="checkbox" ng-model="patient.t3q1"> <hr></li>
+              <li ng-class="{green: patient.t3q2}">Question 2 <input type="checkbox" ng-model="patient.t3q2"> <hr></li>
+              <li ng-class="{green: patient.t3q3}">Question 3 <input type="checkbox" ng-model="patient.t3q3"> <hr></li>
+            </ul>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <button class="btn btn-primary">submit</button>
+  </form>
+
+
+</div>
+
+

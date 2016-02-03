@@ -1,0 +1,63 @@
+<div class="row">
+  
+<div class="col-md-2 patientList">
+  <h2>Patient List</h2>
+  <hr>
+  <ul>
+    <li ng-repeat="patient in vm.patientList" ng-click="vm.getPatient(patient)">{{patient.name}}<hr></li>
+  </ul>
+
+</div>  
+
+<div class="col-md-9 patientForm">
+
+  <h3>{{vm.currentPatient}}</h3>
+
+  <table class="table table-striped table-bordered">
+      <thead>
+        <tr>
+          <th></th>
+          <th>Topic</th>
+          <th>Questions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td class="topic">Topic 1</td>
+          <td>
+            <ul>
+              <li class="{{vm.t1q1}}">Question 1<hr></li>
+              <li class="{{vm.t1q2}}">Question 2<hr></li>
+              <li class="{{vm.t1q3}}">Question 3<hr></li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td class="topic">Topic 2</td>
+          <td>
+            <ul>
+              <li class="{{vm.t2q1}}">Question 1<hr></li>
+              <li class="{{vm.t2q2}}">Question 2<hr></li>
+              <li class="{{vm.t2q3}}">Question 3<hr></li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td class="topic">Topic 3</td>
+          <td>
+            <ul>
+              <li class="{{vm.t3q1}}">Question 1<hr></li>
+              <li class="{{vm.t3q2}}">Question 2<hr></li>
+              <li class="{{vm.t3q3}}">Question 3<hr></li>
+            </ul>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+</div>
+
+  
+</div>
